@@ -1,0 +1,27 @@
+.drawer {
+    /* Custom scrollbar styles for the drawer */
+    scrollbar-width: thin; /* Firefox */
+    scrollbar-color: #af9777 #0a0a0a; /* Track and thumb color */
+
+    &::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #0a0a0a; /* Track color */
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #af9777; /* Thumb color */
+        border-radius: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb:hover {
+        background: #c0a57a; /* Thumb color on hover */
+    }
+}
+
+.backdrop {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+}
